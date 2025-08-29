@@ -1,0 +1,28 @@
+.top__header {
+  height: 37px;
+  padding: 10px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1px solid #7e7e7e;
+}
+
+.top__header-navlist {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.top__header-navlist-item-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #7e7e7e;
+}
+
+.top__header-navlist-item-text {
+  font-size: 13px;
+  color: #7e7e7e;
+}
+
+.main__header {
+}
