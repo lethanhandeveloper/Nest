@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #3BB77E;
+  --border-color: #ccc;
+  --white-color: #FFFFFF;
+  --gray-color: #7E7E7E;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }

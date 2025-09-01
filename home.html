@@ -6,49 +6,485 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="home.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="top__header">
-        <ul class="top__header-navlist">
-          <li class="top__header-navlist-item">
-            <a href="" class="top__header-navlist-item-link">About us</a>
+    <header class="header">
+      <!-- Top header -->
+      <div class="header__top">
+        <ul class="header__navlist">
+          <li class="header__navitem">
+            <a href="" class="header__navlink">About us</a>
           </li>
-          <li class="top__header-navlist-item">
-            <a href="" class="top__header-navlist-item-link">My Account</a>
+          <li class="header__navitem">
+            <a href="" class="header__navlink">My Account</a>
           </li>
-          <li class="top__header-navlist-item">
-            <a href="" class="top__header-navlist-item-link">Withlish</a>
+          <li class="header__navitem">
+            <a href="" class="header__navlink">Wishlist</a>
           </li>
-          <li class="top__header-navlist-item">
-            <a href="" class="top__header-navlist-item-link">Order Tracking</a>
-          </li>
-        </ul>
-        <ul class="top__header-navlist">
-          <li">
-            <span class="top__header-navlist-item-text">100% Secure delivery without contacting the courier</span>
+          <li class="header__navitem">
+            <a href="" class="header__navlink">Order Tracking</a>
           </li>
         </ul>
-        <ul class="top__header-navlist">
-          <li class="top__header-navlist-item-link">
-            <span class="top__header-navlist-item-text">Need help? Call Us:+ 1800 900</span>
-          </li>
-          <li class="top__header-navlist-item-link">
-            <span class="top__header-navlist-item-text">
-                English
-            </span>
-          </li>
-          <li class="top__header-navlist-item-link">
-            <span class="top__header-navlist-item-text">
-                USD
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="main__header">
 
+        <ul class="header__navlist">
+          <li class="header__navitem">
+            <span class="header__text">100% Secure delivery without contacting the courier</span>
+          </li>
+        </ul>
+
+        <ul class="header__navlist">
+          <li class="header__navitem">
+            <span class="header__text">Need help? Call Us: +1800 900</span>
+          </li>
+          <li class="header__navitem">
+            <span class="header__text">English</span>
+          </li>
+          <li class="header__navitem">
+            <span class="header__text">USD</span>
+          </li>
+        </ul>
       </div>
+
+      <!-- Main header -->
+      <div class="header__main">
+        <div class="header__logo-container">
+            <img src="images/logo.PNG" />
+        </div>
+        <div class="header__searchbox-container">
+            <select class="header__category-searchlist">
+                <option class="header__category-searchlist-item"><span class="tessttt">All Categories</span></option>
+                <option class="header__category-searchlist-item">Phone</option>
+                <option class="header__category-searchlist-item">Laptop</option>
+            </select>
+            <span class="header__separator"></span>
+            <input class="header__searchbox-input" placeholder="Search for items..."/>
+            <div class="header-searchbox-btn-container">
+                <i class="header-searchbox-btn fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="header__main-right">
+            <div class="header_location-button">
+              <i class="header__location-icon fa-solid fa-location-dot"></i>
+              <text class="header__selected-location">Your Location</text>
+            </div>
+            <div class="header__nav-shortcut-container">
+              <a href="" class="header__nav-shortcut-item">
+                <i class="fa-solid fa-rotate"></i>
+                <text class="header_nav-shortcut-text">Compare</text>
+              </a>
+              <a href="" class="header__nav-shortcut-item">
+                  <i class="fa-regular fa-heart"></i>
+                  <text class="header_nav-shortcut-text">Wishlist</text>
+              </a>
+              <a href="" class="header__nav-shortcut-item">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <text class="header_nav-shortcut-text">Cart</text>
+              </a>
+              <a href="" class="header__nav-shortcut-item">
+                  <i class="fa-regular fa-user"></i>
+                  <text class="header_nav-shortcut-text">Account</text>
+              </a>
+            </div>
+        </div>
+      </div>
+      <div class="header__navbar-container">
+         <div class="header__navbar-catmenu-container">
+            <i class="header__navbar-catmenu-icon fa-solid fa-list"></i>
+            <span class="header_navbar-catmenu-text">Browse All Categories</span>
+            <i class="header__navbar-catmenu-icon-dropdown fa-solid fa-caret-down"></i>
+            <ul class="header__catmenu-dropdown">
+              <li class="header__catmenu-dropdown-item"><a href="#">Fruits & Vegetables</a></li>
+              <li class="header__catmenu-dropdown-item"><a href="#">Meat & Seafood</a></li>
+              <li class="header__catmenu-dropdown-item"><a href="#">Dairy & Eggs</a></li>
+              <li class="header__catmenu-dropdown-item"><a href="#">Snacks</a></li>
+              <li class="header__catmenu-dropdown-item"><a href="#">Beverages</a></li>
+            </ul>
+         </div>
+         <div class="header__navbar-list-container">
+            <div class="header__navbar-list-item">
+              <i class="header__navbar-deals-icon fa-solid fa-fire"></i>
+              <a href="" class="header__navbar-list-item-text">Deals</a>
+            </div>
+            <div class="header__navbar-list-item">
+              <a href="" class="header__navbar-list-item-text header__navbar-list-item-active">Home</a>
+            </div>
+            <div class="header__navbar-list-item">
+              <a href="" class="header__navbar-list-item-text">About</a>
+            </div>
+            <div class="header__navbar-list-item">
+              <a href="" class="header__navbar-list-item-text">Vendors</a>
+            </div>
+            <div class="header__navbar-list-item">
+              <a href="" class="header__navbar-list-item-text" >Mega Menu</a>
+            </div>
+            <div class="header__navbar-list-item">
+              <a href="" class="header__navbar-list-item-text">Blog</a>
+            </div>
+            <div class="header__navbar-list-item">
+              <a href="" class="header__navbar-list-item-text">Pages</a>
+            </div>
+            <div class="header__navbar-list-item">
+              <a href="" class="header__navbar-list-item-text">Contact</a>
+            </div>
+         </div>
+      </div>  
     </header>
+    <div class="main-container">
+        <div class="main_container__breadcrumb-container">
+            <div class="main__container_bcheader-container">
+                <h3 class="main_container_bcheader_current-text">
+                  Snack
+                </h3>
+                <ul class="main__container_bclist">
+                    <li class="main_container_bclist-item">
+                        <i class="fa-regular fa-house"></i>
+                        Home
+                    </li>
+                    <li class="main_container_bclist-item">
+                        Shop
+                    </li>
+                    <li class="main_container_bclist-item">
+                        Snack
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main__container-content">
+            <div class="main__container-leftcontent">
+                <div class="main__container-cat-card">
+                    <p class="main__container-cat-title">Category</p>
+                    <div class="main__container-cat-item-container">
+                        <div class="main__container-cat-item">
+                            Milks & Dairies
+                        </div>
+                        <div class="main__container-cat-item">
+                            Clothing
+                        </div>
+                        <div class="main__container-cat-item">
+                            Clothing
+                        </div>
+                        <div class="main__container-cat-item">
+                            Clothing
+                        </div>
+                        <div class="main__container-cat-item">
+                            Clothing
+                        </div>
+                        <div class="main__container-cat-item">
+                            Clothing
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__container-rightcontent">
+                <div class="main__container-top-rightcontent">
+                  <p class="main_container-searchfound-text" >We found <span class="main__container-searchfound-num">29 items</span> for you</p>
+                  <div class="main__container-rightcorner-container">
+                      <div class="main__container-rightcorner-item">
+                          <i class="fa-solid fa-border-all fa-grip"></i>
+                          <span>Show: 50</span>
+                      </div>
+                      <div class="main__container-rightcorner-sort">
+                          <i class="fa-solid fa-sort"></i>
+                          <span>Sort by: Feature</span>
+                      </div>
+                  </div>
+                </div>
+                <div class="main__container-product-container">
+                    <div class="main__container-product-item">
+                        <div class="main__container-pditem-top">
+                          <img class="main__container-pditem-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj837no0Eq9BeCre5nmS7BYvz5IKiWUOIGQ&s" alt="Image" height="181.59px" width="181.59px">
+                        </div>
+                        <div class="main__container-pditem-content">
+                            <p class="main__contennt-pditem-cattext">Snack</p>
+                            <p class="main__content-pditem-name">Seeds of Change Organic Quinoe</p>
+                            <div class="main__content-pditem-rating-container">
+                                <div class="main__content-rating-container">
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                </div>
+                                <div class="main__content-comment-container">
+                                    <p class="main__content-comment-text">
+                                        (4.0)
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="main__content-pditem-provider-container">
+                                <p class="main__content-pditem-provider">
+                                    By <span class="main__content-pditem-provider-name">
+                                      NestFood
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="main__container-pditem-bottom">
+                                <p class="main__container-pditem-price">
+                                    $28.85
+                                </p>
+                                <p class="main__container-pditem-bottom-oldprice">
+                                  $32.8
+                                </p>
+                                <button class="main__container-pditem-addcartbtn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container-product-item">
+                        <div class="main__container-pditem-top">
+                          <img class="main__container-pditem-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj837no0Eq9BeCre5nmS7BYvz5IKiWUOIGQ&s" alt="Image" height="181.59px" width="181.59px">
+                        </div>
+                        <div class="main__container-pditem-content">
+                            <p class="main__contennt-pditem-cattext">Snack</p>
+                            <p class="main__content-pditem-name">Seeds of Change Organic Quinoe</p>
+                            <div class="main__content-pditem-rating-container">
+                                <div class="main__content-rating-container">
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                </div>
+                                <div class="main__content-comment-container">
+                                    <p class="main__content-comment-text">
+                                        (4.0)
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="main__content-pditem-provider-container">
+                                <p class="main__content-pditem-provider">
+                                    By <span class="main__content-pditem-provider-name">
+                                      NestFood
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="main__container-pditem-bottom">
+                                <p class="main__container-pditem-price">
+                                    $28.85
+                                </p>
+                                <p class="main__container-pditem-bottom-oldprice">
+                                  $32.8
+                                </p>
+                                <button class="main__container-pditem-addcartbtn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container-product-item">
+                        <div class="main__container-pditem-top">
+                          <img class="main__container-pditem-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj837no0Eq9BeCre5nmS7BYvz5IKiWUOIGQ&s" alt="Image" height="181.59px" width="181.59px">
+                        </div>
+                        <div class="main__container-pditem-content">
+                            <p class="main__contennt-pditem-cattext">Snack</p>
+                            <p class="main__content-pditem-name">Seeds of Change Organic Quinoe</p>
+                            <div class="main__content-pditem-rating-container">
+                                <div class="main__content-rating-container">
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                </div>
+                                <div class="main__content-comment-container">
+                                    <p class="main__content-comment-text">
+                                        (4.0)
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="main__content-pditem-provider-container">
+                                <p class="main__content-pditem-provider">
+                                    By <span class="main__content-pditem-provider-name">
+                                      NestFood
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="main__container-pditem-bottom">
+                                <p class="main__container-pditem-price">
+                                    $28.85
+                                </p>
+                                <p class="main__container-pditem-bottom-oldprice">
+                                  $32.8
+                                </p>
+                                <button class="main__container-pditem-addcartbtn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container-product-item">
+                        <div class="main__container-pditem-top">
+                          <img class="main__container-pditem-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj837no0Eq9BeCre5nmS7BYvz5IKiWUOIGQ&s" alt="Image" height="181.59px" width="181.59px">
+                        </div>
+                        <div class="main__container-pditem-content">
+                            <p class="main__contennt-pditem-cattext">Snack</p>
+                            <p class="main__content-pditem-name">Seeds of Change Organic Quinoe</p>
+                            <div class="main__content-pditem-rating-container">
+                                <div class="main__content-rating-container">
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                </div>
+                                <div class="main__content-comment-container">
+                                    <p class="main__content-comment-text">
+                                        (4.0)
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="main__content-pditem-provider-container">
+                                <p class="main__content-pditem-provider">
+                                    By <span class="main__content-pditem-provider-name">
+                                      NestFood
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="main__container-pditem-bottom">
+                                <p class="main__container-pditem-price">
+                                    $28.85
+                                </p>
+                                <p class="main__container-pditem-bottom-oldprice">
+                                  $32.8
+                                </p>
+                                <button class="main__container-pditem-addcartbtn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container-product-item">
+                        <div class="main__container-pditem-top">
+                          <img class="main__container-pditem-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj837no0Eq9BeCre5nmS7BYvz5IKiWUOIGQ&s" alt="Image" height="181.59px" width="181.59px">
+                        </div>
+                        <div class="main__container-pditem-content">
+                            <p class="main__contennt-pditem-cattext">Snack</p>
+                            <p class="main__content-pditem-name">Seeds of Change Organic Quinoe</p>
+                            <div class="main__content-pditem-rating-container">
+                                <div class="main__content-rating-container">
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                </div>
+                                <div class="main__content-comment-container">
+                                    <p class="main__content-comment-text">
+                                        (4.0)
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="main__content-pditem-provider-container">
+                                <p class="main__content-pditem-provider">
+                                    By <span class="main__content-pditem-provider-name">
+                                      NestFood
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="main__container-pditem-bottom">
+                                <p class="main__container-pditem-price">
+                                    $28.85
+                                </p>
+                                <p class="main__container-pditem-bottom-oldprice">
+                                  $32.8
+                                </p>
+                                <button class="main__container-pditem-addcartbtn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container-product-item">
+                        <div class="main__container-pditem-top">
+                          <img class="main__container-pditem-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj837no0Eq9BeCre5nmS7BYvz5IKiWUOIGQ&s" alt="Image" height="181.59px" width="181.59px">
+                        </div>
+                        <div class="main__container-pditem-content">
+                            <p class="main__contennt-pditem-cattext">Snack</p>
+                            <p class="main__content-pditem-name">Seeds of Change Organic Quinoe</p>
+                            <div class="main__content-pditem-rating-container">
+                                <div class="main__content-rating-container">
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                </div>
+                                <div class="main__content-comment-container">
+                                    <p class="main__content-comment-text">
+                                        (4.0)
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="main__content-pditem-provider-container">
+                                <p class="main__content-pditem-provider">
+                                    By <span class="main__content-pditem-provider-name">
+                                      NestFood
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="main__container-pditem-bottom">
+                                <p class="main__container-pditem-price">
+                                    $28.85
+                                </p>
+                                <p class="main__container-pditem-bottom-oldprice">
+                                  $32.8
+                                </p>
+                                <button class="main__container-pditem-addcartbtn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container-product-item">
+                        <div class="main__container-pditem-top">
+                          <img class="main__container-pditem-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGj837no0Eq9BeCre5nmS7BYvz5IKiWUOIGQ&s" alt="Image" height="181.59px" width="181.59px">
+                        </div>
+                        <div class="main__container-pditem-content">
+                            <p class="main__contennt-pditem-cattext">Snack</p>
+                            <p class="main__content-pditem-name">Seeds of Change Organic Quinoe</p>
+                            <div class="main__content-pditem-rating-container">
+                                <div class="main__content-rating-container">
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                    <i class="main__content-rating-star fa-solid fa-star"></i>
+                                </div>
+                                <div class="main__content-comment-container">
+                                    <p class="main__content-comment-text">
+                                        (4.0)
+                                    </p>
+                                </div>  
+                            </div>
+                            <div class="main__content-pditem-provider-container">
+                                <p class="main__content-pditem-provider">
+                                    By <span class="main__content-pditem-provider-name">
+                                      NestFood
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="main__container-pditem-bottom">
+                                <p class="main__container-pditem-price">
+                                    $28.85
+                                </p>
+                                <p class="main__container-pditem-bottom-oldprice">
+                                  $32.8
+                                </p>
+                                <button class="main__container-pditem-addcartbtn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="main__container-pagination">
+                    <li class="main__container-pagination-item">1</li>
+                    <li class="main__container-pagination-item main__container-pagination-item-active">2</li>
+                    <li class="main__container-pagination-item">3</li>
+                    <li class="main__container-pagination-item">4</li>
+                    <li class="main__container-pagination-item">5</li>
+                    <li class="main__container-pagination-item">6</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
   </body>
 </html>
