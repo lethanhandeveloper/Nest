@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container loading">
+      <div class="top-content">
+        <div class="image">
+          <img
+            width="100"
+            src="https://cdn.tgdd.vn/Products/Images/42/342670/iphone-air-vang-thumb-600x600.jpg"
+          />
+        </div>
+        <div class="info">Giá bán sản phẩm này là 12$</div>
+      </div>
+      <div class="bottom-content">Đây là mô tả sản phẩm</div>
+    </div>
+  </body>
+  <style>
+    .container {
+      width: 400px;
+      height: 150px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+    }
+
+    .top-content {
+      display: flex;
+      margin-bottom: 5px;
+    }
+
+    .container .info {
+      width: 100%;
+      margin-left: 5px;
+    }
+
+    .loading .image,
+    .loading .info,
+    .loading .bottom-content {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .loading .image::before,
+    .loading .info::before,
+    .loading .bottom-content::before {
+      content: "";
+      background-color: #dddddd;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .loading .image::after,
+    .loading .info::after,
+    .loading .bottom-content::after {
+      content: "";
+      background: linear-gradient(to right, #dddddd, #ffffff 50%, #dddddd);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      animation: skeLoading 1.2s infinite alternate;
+    }
+
+    @keyframes skeLoading {
+      from {
+        left: -50%;
+      }
+      to {
+        left: 50%;
+      }
+    }
+  </style>
+</html>

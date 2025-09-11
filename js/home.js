@@ -1,16 +1,18 @@
-const catMenu = document.querySelector('.header__navbar-catmenu-container');
-const dropdown = document.querySelector('.header__catmenu-dropdown');
+const catMenu = document.querySelector(".header__navbar-catmenu-container");
+const dropdown = document.querySelector(".header__catmenu-dropdown");
 
-catMenu.addEventListener('mouseenter', () => {
-  dropdown.style.display = 'block';
+catMenu.addEventListener("mouseenter", () => {
+  dropdown.style.display = "block";
 });
-catMenu.addEventListener('mouseleave', () => {
-  dropdown.style.display = 'none';
+catMenu.addEventListener("mouseleave", () => {
+  dropdown.style.display = "none";
 });
 
 // product fly to cart
 const cart = document.querySelector(".header__nav-shortcut-item-cart");
-const addToCartBtns = document.querySelectorAll(".main__container-pditem-addcartbtn");
+const addToCartBtns = document.querySelectorAll(
+  ".main__container-pditem-addcartbtn"
+);
 
 addToCartBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -42,3 +44,12 @@ addToCartBtns.forEach((btn) => {
     });
   });
 });
+
+// const dropdown = document.querySelector('.dropdown');
+// const items = document.querySelectorAll('.dropdown .item');
+
+//   items.forEach(item => {
+//     item.addEventListener('click', () => {
+//       dropdown.style.display = 'none';
+//     });
+//   });
