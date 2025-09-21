@@ -1,7 +1,3 @@
-.main-container {
-  padding: 20px 80px;
-}
-
 .main_container__breadcrumb-container {
   width: 100%;
   height: 237px;
@@ -90,6 +86,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main__container-rightcorner-container {
@@ -172,6 +169,7 @@
   column-gap: 10px;
   justify-items: center;
   row-gap: 10px;
+  margin-top: 10px;
 }
 
 .main__container-product-item {
@@ -378,99 +376,8 @@
   color: #253d4e;
 }
 
-.footer__container {
-  width: 100%;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__top-footer {
-  display: flex;
-  height: 315px;
-  padding: 20px 80px;
-  border-bottom: 1px solid #0a0f0b;
-}
-
-.footer__bottom-footer {
-  width: 100%;
-  height: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.footer__bfooter-left-text {
-  color: #253d4e;
-}
-
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.footer__contact-info {
-  flex: 2;
-}
-
-.footer__link-title {
-  color: #253d4e;
-  font-weight: bold;
-}
-
-.footer__container-contact-text {
-  color: #253d4e;
-  font-size: 15px;
-  font-weight: semi-bold;
-  gap: 10px;
-}
-
-.footer__contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer__contact-info-logo {
-  height: auto;
-  width: 80%;
-}
-
-.footer__links {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer__link-item {
-  text-decoration: none;
-  color: #253d4e;
-  font-size: 15px;
-}
-
-.footer__apps {
-  flex: 2;
-}
-
-.footer__apps-downlink-container {
-  display: flex;
-}
-
-.div__footer__apps-downlink-item {
-  width: 50%;
-  height: auto;
-}
-
 
 @media (max-width: 768px) {
-    .main-container {
-      padding: 20px 10px;
-    }
-
     .main__container-leftcontent {
       display: none;
     }
@@ -501,8 +408,8 @@
       padding-left: 0px;
       padding-right: 0px;
     }
-    
+
     .footer__top-footer {
-      display: none;
+      padding: 10px 10px;
     }
 }

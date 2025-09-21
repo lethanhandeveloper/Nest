@@ -229,13 +229,13 @@
     border: 1px solid var(--main-color);
   }
 
-  .content__image-selector-item-active {
-    border: 1px solid var(--main-color);
-  }
-
   .content__product-image-selector-item {
     width: 100%;
     height: auto;
+  }
+
+  .content__image-selector-item.active {
+    border: 1px solid var(--main-color);
   }
 
   .content__additional-info {
@@ -282,10 +282,6 @@
     display: block;
   }
   
-  .menu__mobile-overlay {
-    display: none;
-  }
-
   @media (max-width: 768px) {
     .content__overall-info {
       flex-direction: column;
@@ -333,5 +329,9 @@
 
     .content {
       margin-top: 10px;
+    }
+
+    .content__image-selector-item {
+      height: 80px;
     }
 }

@@ -305,7 +305,9 @@
   display: block;
 }
 
-
+.menu__mobile-overlay {
+    display: none;
+}
 
 @media (max-width: 768px) {
   

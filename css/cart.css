@@ -1,0 +1,125 @@
+.main__container-cart-wrapper {
+    width: 100%;
+    overflow-x: auto; 
+}
+
+.main__container-cart  {
+    width: 100%;
+    border-collapse: collapse;
+    max-height: 300px;
+}
+
+.main__container-cart th {
+    background-color: var(--main-color); 
+    color: var(--white-color);
+    text-align: left;
+    border-bottom: 2px solid var(--gray-color);
+}
+
+.main__container-cart tr th {
+    padding: 10px;
+}
+
+.main__container-cart tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+.main__container-cart .product-image {
+    width: 30px;
+    height: auto;
+}
+
+.main__container-cart .product-number {
+    width: 100px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 1px;
+}
+
+.cart-coupon-des {
+    margin-bottom: 10px;
+}
+
+.main__container-cart-summary {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cart-summary-info-wrapper, .cart-summary-des-total-wrapper {
+    padding: 10px;
+}
+
+.cart-summary-des-total-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-summary-subtotal , .cart-summary-shipping, .cart-summary-final-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cart-summary-info-wrapper {
+    border-bottom: 1px solid black;
+}
+
+.cart-summary-checkout-btn {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--white-color);
+    align-self: flex-end;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cart-summary-coupon,
+.cart-summary-total {
+    flex: 0 0 calc(50% - 10px); 
+}
+
+.cart-summary-coupon {
+    flex: 1;
+    border: 1px solid var(--gray-color);
+}
+
+.cart-summary-total {
+    flex: 1;
+    border: 1px solid var(--gray-color);
+}
+
+.main__container-cart-summary .cart-summary-title {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.cart-summary-content {
+    padding: 10px;
+}
+
+.coupon-input {
+    padding: 10px;
+}
+
+.apply-coupon-btn {
+    padding: 10px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+    .main__container-cart-summary {
+        flex-direction: column;
+    }
+}
