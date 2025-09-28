@@ -53,3 +53,37 @@ addToCartBtns.forEach((btn) => {
 //       dropdown.style.display = 'none';
 //     });
 //   });
+
+// select
+const displayedProductNumSelector = document.querySelector('.main__container-rightcorner-count');
+const numText = document.querySelector('.main__container-count-num-text');
+const countDropdown = displayedProductNumSelector.querySelectorAll('.main__container-count-dropdown li');
+
+displayedProductNumSelector.addEventListener("click", () => {
+  displayedProductNumSelector.classList.toggle("open");
+})
+
+countDropdown.forEach(opt => {
+  opt.addEventListener('click', (e) => {
+    numText.innerHTML = `${opt.innerText}`;
+    e.stopPropagation();
+    displayedProductNumSelector.classList.remove('open');
+  });
+});
+
+//sort by
+const sortBySelector = document.querySelector('.main__container-rightcorner-sort');
+const sortText = document.querySelector('.main__container-count-sortby-text');
+const sortDropdown = sortBySelector.querySelectorAll('.main__container-sort-dropdown li');
+
+sortBySelector.addEventListener("click", () => {
+  sortBySelector.classList.toggle("open");
+})
+
+sortDropdown.forEach(opt => {
+  opt.addEventListener('click', (e) => {
+    sortText.innerHTML = `${opt.innerText}`;
+    e.stopPropagation();
+    sortBySelector.classList.remove('open');
+  });
+});
